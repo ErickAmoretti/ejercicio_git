@@ -6,6 +6,43 @@
     <title>Ejercicio GIT</title>
 </head>
 <body>
-    <h1>Hola mundo. Calderon no se baña</h1>
+    <h1>Formulario con colaborador en GIT</h1>
+
+    <div class="formulario">
+        <h2>Micro Formulario</h2>
+
+        <form action="#" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="John Doe" required>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="test@correo.com" required>
+
+            <label for="archivo">Archivo (Opcional):</label>
+            <input type="file" name="archivo" id="archivo">
+
+            <label for="numeroFav">Numero Favorito:</label>
+            <input type="number" name="numeroFav" id="numeroFav" placeholder="7" required>
+
+            <label for="tel">Telefono:</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{4}-[0-9]{4}" maxlength="9" placeholder="0000-0000" required> 
+            
+            <script>
+            document.getElementById('tel').addEventListener('input', (e) => {
+            let value = e.target.value.replace(/\D/g, '').slice(0,8);
+            if (value.length > 4) {
+                value = value.slice(0,4) + '-' + value.slice(4);
+            }
+            e.target.value = value;
+            });
+            </script>
+
+            <label for="edad">Edad:</label>
+            <input type="date" name="edad" id="edad">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
 </body>
 </html>
