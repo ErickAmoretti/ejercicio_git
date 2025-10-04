@@ -3,3 +3,14 @@ body {
     color: white;
     background-color: black;
 }
+
+
+label{
+    color: white;
+}
+
+.formulario{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 5px;
+}
