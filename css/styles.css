@@ -7,10 +7,16 @@ body {
 
 label{
     color: white;
+    display: block;
 }
 
 .formulario{
     background-color: gray;
     padding: 20px;
     border-radius: 5px;
+    display: block;
+}
+
+h1 {
+    text-align: center;
 }
